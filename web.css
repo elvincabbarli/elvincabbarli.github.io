@@ -1,0 +1,276 @@
+body
+{
+    margin: 0;
+    
+}
+
+header
+{
+    background-color: rgb(168, 158, 158);
+    width: 100%;
+    height: 820px;
+}
+
+#h-div1
+{
+    width: 100%;
+    height: 80px;
+    background-color: sandybrown;
+}
+
+#h-div2
+{
+    width: 20%;
+    height: 80px;
+      background: linear-gradient(to right, #485563, #29323c);
+    float: left;
+    color: antiquewhite;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Dela Gothic One';
+    cursor: pointer;
+}
+
+#h-div3
+{
+    width: 60%;
+    height: 80px;
+    background: linear-gradient(to left , #485563, #29323c);
+    float: left;
+}
+
+#h-div4
+{
+    width: 20%;
+    height: 80px;
+    background: linear-gradient(to right, #485563, #29323c);
+    float: left;
+}
+
+
+.menu
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 25px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+
+}
+
+.menu:hover
+{
+    opacity: 0.9;
+    color: yellow;
+}
+
+.dil
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 18px;
+    float: left;
+
+}
+
+
+
+#h-div4 ul
+{
+    margin-left: 100px;
+}
+
+.dil:hover
+{
+    opacity: 0.9;
+    color: yellow;
+}
+
+.tr
+{
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-top: 8px;
+}
+
+#h-img
+{
+    width: 100%;
+    height: 820px;
+    background-color: #333;
+}
+
+#h-goruntu
+{
+    width: 100%;
+    height: 100%;
+}
+
+#cerez
+{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    line-height: 40px;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+#gizli
+{
+    color: lightsalmon;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#kapama
+{
+    border: 1px solid antiquewhite;
+    padding: 5px;
+    border-radius: 25%;
+    margin-left: 35%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+#sec
+{
+    width: 100%;
+    height: 650px;
+    background-color: #333;
+}
+
+.yorum
+{
+    width: 22%;
+    height: 450px;
+    background: linear-gradient(to right, #4b79a1, #283e51);
+    float: left;
+    border: 1px solid antiquewhite;
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-left: 2%;
+    box-shadow: #457b9d 0 8px 20px;
+}
+
+
+.resimalani
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.comment
+{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    color: antiquewhite;
+    text-align: justify;
+    box-sizing: border-box;
+    margin-top: 15px;
+
+}
+
+.kisi
+{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 80px;
+    line-height: 50px;
+}
+
+
+#foot
+{
+    width: 100%;
+    height: 450px;
+    background:
+    linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+    linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+    background-color:#708090;
+    background-size: 64px 128px;
+}
+
+#map
+{
+    width: 40%;
+    height: 350px;
+    position: relative;
+    top: 8%;
+    left: 5%;
+    border: 3px outset #111;
+    box-shadow: 2px 2px 14px #111;
+}
+
+#iletisim
+{
+    width: 40%;
+    height: 350px;
+    background-color: #555;
+    position: relative;
+    border-radius: 10px;
+    bottom: 70%;
+    left: 55%;
+}
+
+#adres
+{
+    width: 100%;
+    height: 250px;
+    border-bottom: 3px dashed darkred;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.add
+{
+    font-size: 20px;
+    color: antiquewhite;
+    text-align: center;
+    padding: 3px;
+}
+
+.sosyal
+{
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#sos img
+{
+    width: 40px; 
+    margin-right: 20px; 
+    height: 40px; 
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+#sos img:hover
+{
+    transform: scale(1.2);
+}
