@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Menu</title>
+    <style>
+        .icon-bar
+        {
+            width: 80px;
+            background-color: #666;
+        }
+
+        .icon-bar a
+        {
+            display: block;
+            justify-content: center;
+            padding: 20px;
+            transition: ease 0.8s;
+
+
+
+        }
+
+        .icon-bar a img
+        {
+            width: 40px;
+            height: 40px;
+            filter: invert(1);
+        }
+
+        .icon-bar a:hover
+        {
+            background-color: black;
+        }
+
+        .active
+        {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-bar">
+        <a class="active" href="#"><img src="home.png" alt=""></a>
+        <a href="#"><img src="loupe.png" alt=""></a>
+        <a href="#"><img src="email.png" alt=""></a>
+        <a href="#"><img src="globe.png" alt=""></a>
+        <a href="#"><img src="delete.png" alt=""></a>
+    </div>
+
+
+
+    <script>
+        $(function(){
+
+        $(".icon-bar a").click(function(){
+
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+
+        })
+
+
+        });
+    </script>
+</body>
+</html>
