@@ -27,7 +27,7 @@
                 <li><a href="#">Ətirlərimiz</a></li>
                 <li><a href="#">Qablarımız</a></li>
                 <li><a href="#">Yeni Ətirlərimiz</a></li>
-		<li><a href="#">Əlaqə</a></li>
+                <li><a href="#">Əlaqə</a></li>
               </ul>
               <img
                 src="./images/list.png"
@@ -38,7 +38,10 @@
             </div>
           </div>
           <div class="header-text">
-            <h1><span class="first-letter">X</span>oş <span class="first-letter">G</span>əlmisiniz</h1>
+            <h1>
+              <span class="first-letter">X</span>oş
+              <span class="first-letter">G</span>əlmisiniz
+            </h1>
             <a href="#" class="btn-cofee">Ətirlərə Get</a>
           </div>
         </div>
@@ -68,8 +71,9 @@
                 />
               </div>
               <p>
-                Bizim mağazamızda siz zövqünüzə uyğun hər bir növ ətiri tapa bilərsiniz. Ətirlərimiz Fransa , 
-                Türkiyə və İsverçdən gətirilib. Sizin seçiminizdə X-Parfüm olsun...
+                Bizim mağazamızda siz zövqünüzə uyğun hər bir növ ətiri tapa
+                bilərsiniz. Ətirlərimiz Fransa , Türkiyə və İsverçdən gətirilib.
+                Sizin seçiminizdə X-Parfüm olsun...
               </p>
             </div>
           </div>
@@ -133,7 +137,53 @@
     </section>
     <!-- PORTFOLIO SECTION FINISH -->
 
-    
+    <!-- SLIDER START -->
+
+    <div class="container">
+      <h2 id="slider">Qaleri</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+
+        <div class="carousel-inner" id="esas">
+          <div class="item active">
+            <img id="img" src="./images/10.jpg" alt="Los Angeles" />
+          </div>
+
+          <div class="item">
+            <img id="img" src="./images/10.jpg" alt="Chicago" />
+          </div>
+
+          <div class="item">
+            <img id="img" src="./images/10.jpg" alt="New york" />
+          </div>
+
+          <div class="item">
+            <img id="img" src="./images/10.jpg" alt="New york" />
+          </div>
+
+          <div class="item">
+            <img id="img" src="./images/10.jpg" alt="New york" />
+          </div>
+
+          <div class="item">
+            <img id="img" src="./images/10.jpg" alt="New york" />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+      </div>
+    </div>
+    <!-- SLIDER fINISH -->
 
     <!-- CONTUCT US START -->
 
@@ -148,20 +198,15 @@
               <img src="./images/phone-call.png" alt="" />
               <p>060-550-66-60</p>
               <br />
-              <p> 055-650-66-60(WP)</p>
+              <p>055-650-66-60(WP)</p>
             </div>
             <div class="contact-item anime-bottom">
               <img src="./images/placeholder.png" alt="" />
-              <p>
-                Nax Şəh H.Əliyev 16
-              </p>
+              <p>Nax Şəh H.Əliyev 16</p>
             </div>
             <div class="contact-item anime-top">
               <img src="./images/instagram.png" alt="" />
-              <p>
-                naxcivan_x_parfum
-                
-                </p>
+              <p>naxcivan_x_parfum</p>
             </div>
           </div>
         </div>
@@ -169,52 +214,48 @@
     </section>
     <!-- CONTUCT US FINISH -->
 
-
     <!-- JS START -->
 
     <script>
-        window.sr = ScrollReveal();
+      window.sr = ScrollReveal();
 
-        sr.reveal(".anime-left" , {
-            origin: 'left',
-            duration: 1100 , 
-            distance: '200px',
-            delay:300
-        })
+      sr.reveal(".anime-left", {
+        origin: "left",
+        duration: 1100,
+        distance: "200px",
+        delay: 300,
+      });
 
-        
-        sr.reveal(".anime-right" , {
-            origin: 'right',
-            duration: 1100 , 
-            distance: '200px',
-            delay:600
-        })
+      sr.reveal(".anime-right", {
+        origin: "right",
+        duration: 1100,
+        distance: "200px",
+        delay: 600,
+      });
 
-        
-        sr.reveal(".anime-top" , {
-            origin: 'top',
-            duration: 1200 , 
-            distance: '200px',
-            delay:600
-        })
-        sr.reveal(".anime-bottom" , {
-            origin: 'bottom',
-            duration: 1200 , 
-            distance: '200px',
-            delay:600
-        })
+      sr.reveal(".anime-top", {
+        origin: "top",
+        duration: 1200,
+        distance: "200px",
+        delay: 600,
+      });
+      sr.reveal(".anime-bottom", {
+        origin: "bottom",
+        duration: 1200,
+        distance: "200px",
+        delay: 600,
+      });
     </script>
 
-
     <script>
-        ScrollReveal().reveal('.ani1' , {delay:250});
-        ScrollReveal().reveal('.ani2' , {delay:500});
-        ScrollReveal().reveal('.ani3' , {delay:750});
-        ScrollReveal().reveal('.ani4' , {delay:1000});
-        ScrollReveal().reveal('.ani5' , {delay:1250});
-        ScrollReveal().reveal('.ani6' , {delay:1500});
-        ScrollReveal().reveal('.ani7' , {delay:1750});
-        ScrollReveal().reveal('.ani8' , {delay:2000});
+      ScrollReveal().reveal(".ani1", { delay: 250 });
+      ScrollReveal().reveal(".ani2", { delay: 500 });
+      ScrollReveal().reveal(".ani3", { delay: 750 });
+      ScrollReveal().reveal(".ani4", { delay: 1000 });
+      ScrollReveal().reveal(".ani5", { delay: 1250 });
+      ScrollReveal().reveal(".ani6", { delay: 1500 });
+      ScrollReveal().reveal(".ani7", { delay: 1750 });
+      ScrollReveal().reveal(".ani8", { delay: 2000 });
     </script>
 
     <script>
