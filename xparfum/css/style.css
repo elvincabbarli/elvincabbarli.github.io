@@ -367,11 +367,6 @@ h4 {
 @media only screen and (max-width: 800px) {
    
 
-    
-
-
-   
-
   .header-logo {
     font-size: 20px;
     letter-spacing: 2px;
@@ -458,10 +453,6 @@ h4 {
 
 /**/
 
-div.container
-{
-  height: 500px;
-}
 
 .slider {
   margin: 0 auto;
