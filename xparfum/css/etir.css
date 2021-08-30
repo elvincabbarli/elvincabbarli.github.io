@@ -48,7 +48,7 @@ p {
 }
 
 .header {
-  background-image: url(./images/mainn.jpg);
+  background-image: url(../images/mainn.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
