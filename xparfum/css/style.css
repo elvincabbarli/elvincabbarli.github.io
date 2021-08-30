@@ -382,6 +382,15 @@ h4 {
   }
 
 
+
+
+  .first-letter {
+    font-size: 5.3rem;
+    font-family: "Poppins", cursive;
+    color: #ffffff;
+  }
+
+
   .header-menu ul {
     width: 90%;
     display: flex;
