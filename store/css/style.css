@@ -407,6 +407,7 @@ nav{
     }
     .toggle{
         display: block;
+        font-size: 25px;
     }
     .toggle:before{
         content: '\f0c9';
