@@ -191,9 +191,19 @@ nav {
   font-weight: 500;
 }
 
+@media (max-width: 1010px)
+{
+  .nextbutton ul
+  {
+    margin-left:35%;
+    
+  }
+}
+
 
 
 @media (max-width: 1010px) {
+  
   nav {
     position: relative;
   }
@@ -263,7 +273,7 @@ nav {
 
   .nextbutton ul
   {
-    margin-left: 20%;
+    margin-left: 10%;
     
   }
 
