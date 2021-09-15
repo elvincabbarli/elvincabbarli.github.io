@@ -110,7 +110,7 @@ div.blocks {
   background-size: 10px 10px;
   float: left;
   margin-left: 10px;
-  border-radius: 10px 0;
+  border-radius: 45px/15px;
   margin-top: 100px;
 }
 
@@ -132,6 +132,15 @@ div.blocks {
   margin-left: 10px;
 }
 
+.nextbutton
+{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: normal;
+}
+
 /* PHONE MENU START */
 
 #menu-icon {
@@ -146,7 +155,7 @@ div.blocks {
 @media only screen and (max-width: 800px) {
   .header {
 
-    height: 750vh;
+    height: 710vh;
   }
   div.blocks {
     width: 100%;
@@ -156,7 +165,7 @@ div.blocks {
     background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
     margin-left: 2px;
-    border-radius: 10px 0;
+    border-radius: 45px/15px;
     margin-top: 100px;
   }
 
@@ -174,8 +183,9 @@ div.blocks {
   }
 
   .block-p a {
+    text-align: center;
     color: black;
-    margin-left: 10px;
+
   }
 
   .header-logo {
