@@ -155,7 +155,7 @@ div.blocks {
 @media only screen and (max-width: 800px) {
   .header {
 
-    height: 750vh;
+    height: 4800px;
   }
   div.blocks {
     width: 100%;
@@ -167,6 +167,18 @@ div.blocks {
     margin-left: 2px;
     border-radius: 45px/15px;
     margin-top: 100px;
+  }
+
+  div.blocks:last-child{
+    width: 100%;
+    height: 275px;
+    background-color: #e5e5f7;
+    opacity: 0.9;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    margin-left: 2px;
+    border-radius: 45px/15px;
+    margin-top: 50px;
   }
 
   .block-h {
