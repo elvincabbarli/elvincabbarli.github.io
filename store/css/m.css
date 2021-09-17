@@ -296,10 +296,7 @@ nav {
   text-align: left;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
-  
-  
-  
+  border: none;
 
 }
 
@@ -307,6 +304,7 @@ nav {
 {
   border: 0.5px solid white;
   padding: 11px;
+  background-color: #fefae0;
   text-align: center;
   cursor: pointer;
 }
