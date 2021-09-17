@@ -5,6 +5,8 @@
 <meta content="IE-edge" http-equiv="X-UA-Compatible">
 <meta content="width=device-width, intial-scale=1.0" name="viewport">
 <title>Shopping Website</title>
+<!-- SCROLL REVEAL -->
+<script src="https://unpkg.com/scrollreveal"></script>
 <!--fav-icon---------------->
 <link rel="shortcut icon" href="images/fav-icon.png"/>
  <!--using FontAwesome--------------->
@@ -444,7 +446,7 @@
 </div>
 
 <!--footer---------------------------->
-<footer>
+<footer class="footer">
     <!--copyright-------------->
     <span class="copyright">
         Copyright 2021 - Bütün huquqları qorunur
@@ -502,7 +504,18 @@ src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ
 	});
 </script>
 
+<script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px', 
+      duration: 2000, 
+      reset: true
+    })
 
+    sr.reveal(`.product-img , .arrival-heading , .social-call , .footer , .product-details` , {
+      interval: 200
+    })
+  </script>
 
 <!--js-link--------------------->
 

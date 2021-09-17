@@ -415,6 +415,7 @@ nav{
         content: '\f0c9';
         font-family: fontAwesome;
         line-height: 30px;
+        font-size: 25px;
         z-index: 1;
         cursor: pointer;
     }

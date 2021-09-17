@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta content="IE-edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, intial-scale=1.0" name="viewport" />
+    <!-- SCROLL REVEAL -->
+<script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
     <title>Shopping Website</title>
     <!--fav-icon---------------->
@@ -351,6 +353,19 @@
         });
       });
     </script>
+
+<script>
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance: '50px', 
+    duration: 2000, 
+    reset: true
+  })
+
+  sr.reveal(`.product-img , .arrival-heading , .social-call , .footer , .product-details` , {
+    interval: 200
+  })
+</script>
 
  
 
