@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Scroll reveal Js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script
       src="https://kit.fontawesome.com/266e5f8f8b.js"
       crossorigin="anonymous"
@@ -38,11 +40,11 @@
             </div>
           </div>
           <div class="header-text">
-            <h1>
-              <span class="first-letter">X</span>oş
-              <span class="first-letter">G</span>əlmisiniz
+            <h1 class="anime1">
+              <span class="first-letter anime1">X</span>oş
+              <span class="first-letter anime1">G</span>əlmisiniz
             </h1>
-            <a href="./etir.html" class="btn-cofee">Ətirlərə Get</a>
+            <a href="./etir.html" class="btn-cofee anime1">Ətirlərə Get</a>
           </div>
         </div>
       </div>
@@ -54,14 +56,14 @@
     <section id="about">
       <div class="about">
         <div class="containerq">
-          <div class="about-title">
+          <div class="about-title anime1">
             <h2>Haqqımızda</h2>
           </div>
           <div class="about-content">
-            <div class="about-img anime-left">
+            <div class="about-img anime1">
               <img src="./images/about.jpg" alt="" />
             </div>
-            <div class="about-text anime-right">
+            <div class="about-text anime1">
               <div id="asteriks">
                 <img
                   width="40px"
@@ -70,7 +72,7 @@
                   alt=""
                 />
               </div>
-              <p>
+              <p class="anime1">
                 Bizim mağazamızda siz zövqünüzə uyğun hər bir növ ətiri tapa
                 bilərsiniz. Ətirlərimiz Fransa , Türkiyə və İsverçdən gətirilib.
                 Sizin seçiminizdə X-Parfüm olsun...
@@ -140,7 +142,7 @@
     <!-- SLIDER START -->
 
     <div class="about-titleq">
-      <h2>Qaleriyamız</h2>
+      <h2 class="anime1">Qaleriyamız</h2>
     </div>
 
     <div class="container">
@@ -163,7 +165,7 @@
           </div>
         </div>
       </div>
-      <!-- End // .slider -->
+
       
       
       
@@ -199,20 +201,20 @@
       <div class="contact">
         <div class="containerq">
           <div class="page-title">
-            <h2>Bizimlə Əlaqə</h2>
+            <h2 class="anime1">Bizimlə Əlaqə</h2>
           </div>
           <div class="contact-content">
-            <div class="contact-item anime-top">
+            <div class="contact-item anime1">
               <img src="./images/phone-call.png" alt="" />
               <p>060-550-66-60</p>
               <br />
               <p>055-650-66-60(WP)</p>
             </div>
-            <div class="contact-item anime-bottom">
+            <div class="contact-item anime1">
               <img src="./images/placeholder.png" alt="" />
               <p>Nax Şəh H.Əliyev 16</p>
             </div>
-            <div class="contact-item anime-top">
+            <div class="contact-item anime1">
               <a href="https://www.instagram.com/naxcivan_x_parfum/"><img src="./images/instagram.png" alt="" /></a>
               <a href="https://www.instagram.com/naxcivan_x_parfum/"><p>naxcivan_x_parfum</p></a>
             </div>
@@ -222,42 +224,21 @@
     </section>
     <!-- CONTUCT US FINISH -->
 
+    <script>
+      const sr = ScrollReveal({
+        origin: 'top',
+        distance: '30px', 
+        duration: 2000, 
+        reset: true
+      })
 
-
-
-    <!-- JS START -->
-
-    <!-- <script>
-      window.sr = ScrollReveal();
-
-      sr.reveal(".anime-left", {
-        origin: "left",
-        duration: 1100,
-        distance: "200px",
-        delay: 300,
-      });
-
-      sr.reveal(".anime-right", {
-        origin: "right",
-        duration: 1100,
-        distance: "200px",
-        delay: 600,
-      });
-
-      sr.reveal(".anime-top", {
-        origin: "top",
-        duration: 1200,
-        distance: "200px",
-        delay: 600,
-      });
-      sr.reveal(".anime-bottom", {
-        origin: "bottom",
-        duration: 1200,
-        distance: "200px",
-        delay: 600,
-      });
+      sr.reveal(`.anime1` , {
+        interval: 200
+      })
     </script>
 
+
+    
     <script>
       ScrollReveal().reveal(".ani1", { delay: 250 });
       ScrollReveal().reveal(".ani2", { delay: 500 });
@@ -268,7 +249,7 @@
       ScrollReveal().reveal(".ani7", { delay: 1750 });
       ScrollReveal().reveal(".ani8", { delay: 2000 });
     </script>
- -->
+
     <script>
       var x = document.getElementById("menulist");
       x.style.maxHeight = "0px";
