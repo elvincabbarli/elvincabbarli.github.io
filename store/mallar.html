@@ -25,17 +25,18 @@
   <body>
     <!-- <nav>  -->
     <!--social-links-and-phone-number----------------->
-    <div class="social-call">
+    <div class="social-call" id="myDIV">
       <!--social-links--->
       <div class="social">
-        <a href="#"><i style="font-size: 25px" class="fab fa-facebook"></i></a>
-        <a href="#"><i style="font-size: 25px" class="fab fa-instagram"></i></a>
-        <a href="#"><i style="font-size: 25px" class="fab fa-whatsapp"></i></a>
+        <a href="#"><i style="font-size: 20px" class="fab fa-facebook"></i></a>
+        <a href="#"><i style="font-size: 20px" class="fab fa-instagram"></i></a>
+        <a href="#"><i style="font-size: 20px" class="fab fa-whatsapp"></i></a>
       </div>
       <!--phone-number------>
-      <div class="phone">
-        <span>Tell: +994-xxx-xx-xx</span>
-      </div>
+     <div class="phone">
+      <span style="font-size: 16px;">  
+         Tell: +994-xxx-xx-xx</span>
+  </div>
     </div>
     <!--menu-bar----------------------------------------->
     <div class="navigation fix-nav">
@@ -46,7 +47,8 @@
       <!--menu----------------->
       <ul class="menu">
         <li><a href="./index.html">Ana Səhifə</a></li>
-        <li class="shop"><a href="#">Mallarımız</a></li>
+        <li class="shop"><a href="#">Mallar</a></li>
+        <li class="shop" onclick="bgdeyis()" id="button"><a href="#">Əlaqə</a></li>
 
         <!--          <li><a href="#">Women</a></li>
          <li><a href="#">Kids</a></li> -->
@@ -299,17 +301,20 @@
 
     <!--SLIDER FINISH-->
 
-    <!--footer---------------------------->
-    <footer>
-      <!--copyright-------------->
-      <span class="copyright">
-        © 2021 Bütün hüquqları qorunur
-        <br />
-        <strong style="font-size: 20px; font-weight: 500">
-          Developed by <a href="#">Elvin&Wizard</a>
-        </strong>
-      </span>
-    </footer>
+  <!--footer---------------------------->
+<footer>
+  <!--copyright-------------->
+  <span class="copyright">
+      Copyright 2021 - Bütün huquqları qorunu
+  </span>
+  <!--subcribe---------------->
+  <div class="subscribe">
+      <form>
+      <input type="email" placeholder="nümune@gmail.com" required/>
+      <input type="submit" value="Takib et">
+      </form>
+  </div>
+</footer>
 
     <!--using JQuery--------------->
     <script
@@ -352,6 +357,8 @@
         });
       });
     </script>
+
+ 
 
     <!--js-link--------------------->
 
