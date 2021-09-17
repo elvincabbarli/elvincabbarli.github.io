@@ -24,7 +24,9 @@ nav {
   height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
-  margin-left: 50px;
+  margin-top: 30px;
+  background-color: #e9ecef;
+  border-bottom: none;
   justify-content: center;
   align-items: center;
 }
@@ -168,38 +170,51 @@ nav {
 
 .nextbutton
 {
-  width: 100%;
+
+  display: flex;
+  width: 230px;
+  border-radius: 10px;
   height: 40px;
-
-}
-
-.nextbutton ul
-{
-  margin-left: 40%;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefae0;
   
+  
+  
+
 }
 
-.nextbutton ul li
+.nextbutton p
 {
-  float: left;
-  margin-left: 4%;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  padding: 11px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Gluten';
 }
 
-.nextbutton ul li a
+
+.nextbutton a
 {
   color: black;
   font-size: 20px;
-  font-weight: 500;
 }
 
-@media (max-width: 1010px)
+
+
+/* @media (max-width: 1010px)
 {
   .nextbutton ul
   {
     margin-left:35%;
     
   }
-}
+} */
 
 
 
@@ -274,35 +289,43 @@ nav {
 
   .nextbutton
 {
-  width: 100%;
+
+  display: flex;
+  width: 230px;
   height: 40px;
-
-}
-
-.nextbutton ul
-{
-  margin-left: 5%;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
   
+  
+  
+
 }
 
-.nextbutton ul li
+.nextbutton p
 {
-  float: left;
-  margin-left: 4%;
+  border: 0.5px solid white;
+  padding: 11px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.nextbutton ul li a
+
+.nextbutton a
 {
   color: black;
   font-size: 20px;
-  font-weight: 500;
 }
 
-    .nextbutton ul li
-    {
-      margin-left: 8%;
-      font-size: 25px;
-    }
+
+
+
+
+
   .navigation {
     padding: 10px;
   }

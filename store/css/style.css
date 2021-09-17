@@ -21,10 +21,11 @@ nav{
     z-index: 100;
 }
 .social-call{
-    height: 60px;
+    height: 40px;
     border: 1px solid rgba(0,0,0,0.05);
     display: flex;
-    margin-top: 10px;
+    background-color: #e9ecef;
+    margin-top: 30px;
     border-bottom: none;
     justify-content: center;
     align-items: center;

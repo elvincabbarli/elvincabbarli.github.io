@@ -37,6 +37,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #e9ecef;
     padding: 10px;
     flex-wrap: wrap;
 }
