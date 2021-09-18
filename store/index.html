@@ -428,6 +428,47 @@
   </section>
 
 
+  <!-- slider -->
+
+  <!--heading-------->
+  <div class="arrival-heading">
+    <strong>Önə Çıxanlar</strong>
+    <p>We Provide You New Fasion Design Clothes</p>
+</div>
+  <div class="slideshow-container2">
+
+    <div class="mySlides fade2">
+      <div class="numbertext2">1 / 3</div>
+      <img src="./images/Slider_04.jpg" style="width:100%">
+      <div class="text2">Başlıq 1</div>
+    </div>
+    
+    <div class="mySlides fade2">
+      <div class="numbertext2">2 / 3</div>
+      <img src="./images/Slider_05.jpg" style="width:100%">
+      <div class="text2">Başlıq 2</div>
+    </div>
+    
+    <div class="mySlides fade2">
+      <div class="numbertext2">3 / 3</div>
+      <img src="./images/Slider_06.jpg" style="width:100%">
+      <div class="text2">Başlıq 3</div>
+    </div>
+    
+    </div>
+    <br>
+
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    
+   
+
+
 
 
   <!--social-links-and-phone-number----------------->
@@ -456,11 +497,30 @@
 
 
 
+    
 
 
-
-
-
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active2", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active2";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
 
 
  <!--using JQuery--------------->
@@ -508,12 +568,12 @@ src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ
     const sr = ScrollReveal({
       origin: 'top',
       distance: '50px', 
-      duration: 2000, 
+      duration: 1500, 
       reset: true
     })
 
     sr.reveal(`.product-img , .arrival-heading , .social-call , .footer , .product-details` , {
-      interval: 200
+      interval: 100
     })
   </script>
 
