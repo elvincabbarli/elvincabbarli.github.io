@@ -81,7 +81,7 @@ body{
 @media(max-width:1024px){
     .slide .inner{
         position: absolute;
-        bottom: 1px;
+        bottom: 18px;
         left: 1px;
     }  
 
