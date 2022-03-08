@@ -1,0 +1,69 @@
+.sidebar {
+  flex: 1;
+  height: calc(100vh - 50px);
+  background-color: rgb(251, 251, 255);
+  border-radius: 10px;
+  position: sticky;
+  top: 50px;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+  color: rgb(0, 18, 56);
+}
+
+.sidebarTitle {
+  font-size: 25px;
+  margin-top: 75px;
+}
+
+.sidebarTitleSecond {
+  font-size: 25px;
+  margin-top: 65px;
+}
+
+.sideBarIcons {
+  margin-right: 8px;
+}
+
+.navigation {
+  width: 300px;
+}
+
+.mainmenu,
+.submenu {
+  list-style: none;
+  padding: 0;
+}
+
+.mainmenu{
+    margin: 20px;
+}
+
+.mainmenu a {
+  display: block;
+  background-color: rgb(251, 251, 255);
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+.mainmenu a:hover {
+  background-color: rgb(240, 240, 255);
+}
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+.submenu a:hover {
+  background-color: rgb(240, 240, 255);
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-out;
+}
+

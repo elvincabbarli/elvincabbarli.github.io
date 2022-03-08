@@ -1,0 +1,46 @@
+
+.featured{
+    width: 100%;
+}
+
+.featuredItem{
+    flex: 1;
+    padding: 10px 0;
+    margin: 10px 0px 50px 0px;
+}
+
+
+.branches{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.featuredTitle{
+   display: block;
+   margin-bottom: 30px;
+   font-size: 30px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.branchListItem{
+    width: 220px;
+    height: 120px;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 5px 13px 10px 1px rgba(0,0,0,0.26);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 211, 250);
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.brancIcon{
+    font-size: 40px;
+    color: darkblue;
+}
