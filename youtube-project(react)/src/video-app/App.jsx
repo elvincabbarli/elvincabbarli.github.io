@@ -1,17 +1,18 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
 import SearchBar from "./components/SearchBar";
 import VideoDetails from "./components/VideoDetails";
 import VideoList from "./components/VideoList";
 import youtube from "./components/youtube";
 
-class App extends React.Component {
-  state = { videos: [], selectedVideo: null };
+const App = () => {
+  const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
-  componentDidMount(){
-      this.onTermSubmit('car music')
-  }
+  useEffect(() => {
+    onTermSubmit("car music");
+  }, []);
 
-  onTermSubmit = async (term) => {
+  const onTermSubmit = async (term) => {
     // api ile melumat almaq asinkron bir islem oldugu ucun asyn await den istifade edirik
     const response = await youtube.get("/search", {
       params: {
@@ -19,38 +20,26 @@ class App extends React.Component {
       },
     });
 
-    // videolar geldikden sora onlari state-e yigiriq
-    this.setState({ 
-        videos: response.data.items,
-        // default video gostermek ucundur
-        selectedVideo: response.data.items[0]
-    });
+    setVideos(response.data.items);
+    selectedVideo(response.data.items[0]);
   };
 
-  onVideoSelect = (video) => {
-    this.setState({ selectedVideo: video });
-  };
 
-  render() {
-    return (
-      <div className="ui container">
-        <SearchBar onFormSubmit={this.onTermSubmit} />
-        <div className="ui grid">
-          <div className="ui row">
-            <div className="eleven wide column">
-              <VideoDetails video={this.state.selectedVideo} />
-            </div>
-            <div className="five wide column">
-              <VideoList
-                onVideoSelect={this.onVideoSelect}
-                videos={this.state.videos}
-              />
-            </div>
+  return (
+    <div className="ui container">
+      <SearchBar onFormSubmit={onTermSubmit} />
+      <div className="ui grid">
+        <div className="ui row">
+          <div className="eleven wide column">
+            <VideoDetails video={selectedVideo} />
+          </div>
+          <div className="five wide column">
+            <VideoList onVideoSelect={(video) =>  setSelectedVideo(video)} videos={videos} />
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;
